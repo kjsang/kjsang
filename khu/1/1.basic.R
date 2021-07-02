@@ -127,4 +127,88 @@ rbind(1:4, c = 2, "a++" = 10, dd, deparse.level = 0) # middle 2 rownames
 rbind(1:4, c = 2, "a++" = 10, dd, deparse.level = 1) # 3 rownames (default)
 rbind(1:4, c = 2, "a++" = 10, dd, deparse.level = 2) # 4 rownames
 
+###############################
+########### 2일차 #############
+###############################
 
+# 데이터형태를 확인하는 방법
+
+is_character("홍길동")
+is.numeric(pi)
+x <- pi:10
+is.numeric(x)
+
+# 데이터를 만드는 방법
+array(data = 1:5,
+      dim = c(2,4))
+# > array(data = 1:5,
+#         +       dim = c(2,4))
+# [,1] [,2] [,3] [,4]
+# [1,]    1    3    5    2
+# [2,]    2    4    1    3
+matrix(data = 1:12,
+       nrow = 6,
+       ncol = 2,
+       byrow = F)
+# > matrix(data = 1:12,
+#          +        nrow = 6,
+#          +        ncol = 2,
+#          +        byrow = F)
+# [,1] [,2]
+# [1,]    1    7
+# [2,]    2    8
+# [3,]    3    9
+# [4,]    4   10
+# [5,]    5   11
+# [6,]    6   12
+
+# 행렬의 계산
+x <- array(1:4,
+           dim = c(2,2))
+y <- array(5:8,
+           dim = c(2,2))
+x %*% y # 행렬곱셈
+t(x) # 전치행렬
+solve(x) # 역행렬
+det(x) # 행렬식 
+
+
+# apply 계열의 함수
+
+# sample 추출
+as_tibble(Titanic) -> td_Titanic
+td_Titanic %>% 
+  sample(10, replace = T) # 오류가 난다. 왜?
+
+as_tibble(iris) %>% 
+  sample(10, replace = T) # 이상하게 나오는 이유는 벡터나 배열에서 샘플을 추출하는 함수이기 때문이다!
+# 즉, sample을 바로 적용해 사용하지는 말 것 (인덱스를 사용)
+
+# 데이터 다루기\
+as_tibble(Titanic) -> td_Titanic
+td_Titanic %>% 
+  filter(Class == "1st") %>% 
+  summary
+
+# 데이터 프레임 만들기
+name <- c("김", "나", "박", "이")
+age <- c(20:23)
+gender <- as.factor(c("M","F","M","M"))
+blood.type <- as.factor(c("A","B","O","AB"))
+patients1 <- data.frame(names, age, gender, blood.type)
+patients1
+
+as_tibble(cars) %>% # cars를 tibble 데이터로 변환
+  select(speed, dist) %>%  # 변수 중 speed와 dist를 선택한다
+  filter(speed > 20) %>% # speed가 20을 초과하는 데이터만 추출
+  select(-dist) # 추출된 데이터 중 dist 변수를 제거
+
+as_tibble(airquality) %>% 
+  na.omit() # 데이터 중 결측값을 무시하자
+
+# lapply 대신 사용할 수 있는 것
+as_tibble(airquality) %>% 
+  na.omit() %>% # 결측치 제거 
+  dplyr::group_by(Month) %>% #월별 데이터를 보고싶어요
+  summarise(mean_Ozone = mean(Ozone), # 오존량 평균 
+            mean_Solar = mean(Solar.R)) # 일조량 평균
