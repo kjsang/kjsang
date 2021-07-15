@@ -74,3 +74,5 @@ mse <- mean((lm.pred - auto_test$c_thickness)^2) ; mse
 
 score <- c(2,3,4,5,6)
 score %<>% + 2
+
+library(KoNLP)
