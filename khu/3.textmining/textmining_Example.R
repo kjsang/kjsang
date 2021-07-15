@@ -8,7 +8,7 @@ pacman::p_load(
 read_table("reg_ex.txt") -> reg
 reg %>% 
   rename(text = `Tue Oct 30 17:43:46 2012`) %>% 
-  mutate(id = c(1:4279)) %>% 
+  mutate(id = c(1:length(text))) %>% 
   select(id, text) %>% 
   group_by(id) %>% 
   mutate(reg_1 = text %>% 
@@ -53,7 +53,7 @@ reg_2 %>%
 # 3. ORA 키워드 빈도수 추출
 reg %>% 
   rename(text = `Tue Oct 30 17:43:46 2012`) %>% 
-  mutate(id = c(1:4279)) %>% 
+  mutate(id = c(1:length(text))) %>% 
   unnest_tokens(text, text) %>% 
   count(text) %>% 
   arrange(desc(n)) %>% 
@@ -64,3 +64,4 @@ reg %>%
 # 1 ora     108
 
 # ora 라는 글자는 총 108번 나온 것을 확인할 수 있다.
+
