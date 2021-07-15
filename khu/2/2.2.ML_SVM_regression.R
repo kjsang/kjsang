@@ -16,11 +16,7 @@ raw_autoparts %>%
 autoparts %>% rstatix::get_summary_stats()
 
 # 3.1. 데이터 분할
-set.seed(123)
-auto_split <- rsample::initial_split(autoparts,prop = 0.70)
-auto_train <- training(auto_split) # Analysis를 학습으로 적재
-auto_test  <-  testing(auto_split) # Assess를 테스트로 적재
-auto_train %>%  skimr::skim()
+ 
 
 
 svm(c_thickness ~ .,

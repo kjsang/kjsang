@@ -1,15 +1,5 @@
-# https://www.java.com/ko/download/ 자바 설치
-install.packages("rJava")
-install.packages("multilinguer")
-multilinguer::install_jdk() 
-rJava::.jinit()
-install.packages("KoNLP", 
-    repos = c("https://forkonlp.r-universe.dev",
-              "https://cloud.r-project.org"),
-    INSTALL_opts = c("--no-multiarch")
-  )
-library(KoNLP)
-install.packages("rJava")
-install.packages(c("stringr", "hash", "tau", "Sejong", "RSQLite", "devtools"), type = "binary")
-install.packages(“wordcloud”)
-install.packages(“tm”)
+library('KoNLP')
+useSejongDic()
+extractNoun("롯데마트가 판매하고 있는 흑마늘 양념 치킨이 논란이 되고 있다.")
+SimplePos09("롯데마트가 판매하고 있는 흑마늘 양념 치킨이 논란이 되고 있다.")
+SimplePos22("롯데마트가 판매하고 있는 흑마늘 양념 치킨이 논란이 되고 있다.")

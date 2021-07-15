@@ -95,9 +95,9 @@ assignments <- kclusts %>% unnest(cols = c(augmented))
 clusterings <- kclusts %>% unnest(cols = c(glanced))
 ggplot(clusterings, aes(k, tot.withinss)) +
   geom_line() +
-  geom_point() # 최적의 k 는 5
+  geom_point() # 최적의 k 는 4
 
-kclust <- kmeans(points, centers = 3) # 3개로 묶어볼까?
+kclust <- kmeans(points, centers = 4) # 4개로 묶어볼까? 근데 원래는 2임 
 fviz_cluster(kclust, data = points, 
              geom = "point",
              ellipse.type = "convex", 
@@ -105,9 +105,15 @@ fviz_cluster(kclust, data = points,
              )
 
 # 정오분류표
+kclust <- kmeans(points, centers = 2) # 4개로 묶어볼까? 근데 원래는 2임
+fviz_cluster(kclust, data = points, 
+             geom = "point",
+             ellipse.type = "convex", 
+             ggtheme = theme_bw()
+             )
 caret::confusionMatrix(as.factor(mydata2$Occupancy), as.factor(kclust$cluster))
 # Confusion Matrix and Statistics
-# 
+# |
 #           Reference
 # Prediction    1    2
 #          1   45   82
