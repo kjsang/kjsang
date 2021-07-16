@@ -52,7 +52,8 @@ pacman::p_load(
   tidytext # 분석 패키지
   )
 
-c("R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing.[6] The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, data mining surveys, and studies of scholarly literature databases show substantial increases in popularity; as of June 2019, R ranks 22nd in the TIOBE index, a measure of popularity of programming languages.", "A GNU package, source code for the R software environment is written primarily in C, Fortran and R itself,[12] and is freely available under the GNU General Public License. Pre-compiled binary versions are provided for various operating systems. Although R has a command line interface, there are several graphical user interfaces, such as RStudio, an integrated development environment.") -> raw
+c("R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing.[6] The R language is widely used among statisticians and data miners for developing statistical software and data analysis. Polls, data mining surveys, and studies of scholarly literature databases show substantial increases in popularity; as of June 2019, R ranks 22nd in the TIOBE index, a measure of popularity of programming languages.",
+  "A GNU package, source code for the R software environment is written primarily in C, Fortran and R itself,[12] and is freely available under the GNU General Public License. Pre-compiled binary versions are provided for various operating systems. Although R has a command line interface, there are several graphical user interfaces, such as RStudio, an integrated development environment.") -> raw
 
 # 정규표현식을 이용해 첫 문자가 대문자로 시작되는 단어 찾아내기
 raw %>% 
@@ -85,7 +86,7 @@ raw %>%
 # 문단1과 문단2에 해당하는 단어 빈도 조사
 raw %>% 
   as_tibble() %>% 
-  rename(text = value) %>% 
+  rename(text = value) %>%  
   mutate(paragraph = 1:length(text),
          word = text %>%
            str_split(" ", simplify = F)) %>% 
