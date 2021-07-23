@@ -2,26 +2,16 @@ if (!require("pacman")) (install.packages("pacman"))
 pacman::p_load(
   tidyverse, magrittr,
   httr, urltools, RSelenium,
-  rvest, jsonlite
+  rvest, jsonlite,
+  googlesheets4
   )
 
-library(RSelenium)
 
 library(RSelenium)
-library(httr)
-library(rvest)
-library(RSelenium)
-library(googlesheets4)
-library(RSelenium)
-remDr<-remoteDriver(port=4444L, browserName = "chrome")
-remDr$open(silent = TRUE)#Open the browser
-
-## RSelenium활용 서버 연결
-
-remD <- remoteDriver(remoteServerAddr = 'localhost', 
-                     port = 4444L, # 포트번호 입력 
-                     browserName = "chrome") 
-remD$open() #서버에 연결
+rd <- rsDriver(port = 4444L, browser = c("firefox")) # 포트 이름은 그냥 무작위로 정했는데 맞는건지는 모르겠습니다 
+remDr <- rd[["client"]]
+remDr$navigate("http://www.bbc.com")
+remDr$close()
 
 
 title_you <- "인공지능"     # 검색어 객체화
@@ -37,7 +27,9 @@ remD$navigate(paste0("https://www.youtube.com/results?search_query=", title_you)
 html <- remD$getPageSource()[[1]] 
 html <- read_html(html) #페이지의 소스 읽어오기 
 
-
+library(RSelenium)
+remDr<-remoteDriver(port=4444L, browserName = "chrome")
+ remDr$open(silent = TRUE)#Open the browser
 
 
 # selector gadget를 크롬 웹스토어 검색-활용
@@ -63,41 +55,3 @@ write.table(youtube_title,
 
 View(youtube_title)
 
-
-if (!require("pacman")) (install.packages("pacman"))
-pacman::p_load(
-  tidyverse, magrittr,
-  httr, urltools, RSelenium,
-  rvest, jsonlite
-  )
-coronaurl <- GET(
-  url = "http://ncov.mohw.go.kr",
-  path = "bdBoardList_Real.do",
-  query = list("brdId" = "1",
-               "brdGubun" = "14")
-)
-print(x = coronaurl)
-class(x = coronaurl)
-global <- coronaurl %>% 
-  read_html() %>% 
-  html_node(css = "div.data_table.mgt16 > table.num") %>% 
-  html_table(fill = T)
-colnames(x = global) <- c("대륙", "국가", "death")
-global %>% 
-  select(death) %>% 
-  mutate(death = death %>% 
-           str_remove_all(pattern = "[\r\n\t,]+") %>% 
-           str_split(pattern = "명\\(사망 ", n = 2, simplify = T) %>% 
-           unlist()) %>% 
-  select(death) %>% 
-  mutate(감염 = death[,1] %>% 
-              str_remove(pattern = "명") %>% 
-              as.double()) %>% 
-  mutate(사망 = death[,2] %>% 
-              str_remove(pattern = "\\)") %>% 
-              as.double()) %>% 
-  bind_cols(global %>% 
-              select(대륙, 국가)) %>% 
-  select(대륙, 국가, 감염, 사망)
-
-global
