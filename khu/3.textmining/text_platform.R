@@ -8,6 +8,7 @@ pacman::p_load(
   KoNLP, hrbrthemes
   )
 
+
 # 데이터 로드 ----------------------------------------------
 
 readxl::read_xls("article_platform.xls") -> raw
@@ -83,7 +84,7 @@ raw %>%
   geom_text(aes(label = n, vjust = -1))
 
 
-v# 분야별 출간논문수
+# 분야별 출간논문수
 raw %>%
   select(NO, title, keyword, year, field) %>% 
   group_by(field) %>% 
@@ -186,7 +187,6 @@ data2 %>%
   filter(n >= 3) %>% 
   ggplot(aes(x = fct_reorder(word, n), y = n, fill = word)) +
   geom_bar(stat = "identity") +
-  coord_flip() + 
   coord_polar() +
   xlab("키워드") +
   ylab("출간논문수")
