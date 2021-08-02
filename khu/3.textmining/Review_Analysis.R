@@ -123,7 +123,7 @@ RangJong
 RangJong %>% 
   bind_rows(BossBaby) %>% 
   group_by(movie) %>% 
-  count(words) %>% 
+  dplyr::count(words) %>% 
   arrange(desc(n)) %>% 
   filter(str_count(words) >= 2) %>% 
   filter(!words %in% c("^ㅋ", "^ㅎ")) %>% 
