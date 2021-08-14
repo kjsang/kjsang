@@ -6,6 +6,10 @@ Welecome!
 [![Jusangs' GitHub stats](https://github-readme-stats.vercel.app/api?username=kjsang)](https://github.com/anuraghazra/github-readme-stats)
 
 
+### 현재 작업중인 논문 code 저장소
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=discourse_rf)](https://github.com/anuraghazra/github-readme-stats)
+
+
 <!--
 **kjsang/kjsang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
