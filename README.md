@@ -1,6 +1,8 @@
-### Hi there 👋 This is Jusangs' github🦊 Welecome!
+### Hi there 👋 
+### This is Jusangs' github🦊 Welecome!
 
-[![kjsang's GitHub stats](https://github-readme-stats.vercel.app/api?username=kjsang)](https://github.com/anuraghazra/github-readme-stats)
+### Jusangs' GitHub stats
+[![Jusangs' GitHub stats](https://github-readme-stats.vercel.app/api?username=kjsang)](https://github.com/anuraghazra/github-readme-stats)
 
 
 <!--
