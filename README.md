@@ -10,7 +10,8 @@ Welecome!
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=discourse_rf)](https://github.com/anuraghazra/github-readme-stats)
 
 ### 많이 사용한 언어
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kjsang)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kjsang&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
 
 
 <!--
