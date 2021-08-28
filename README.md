@@ -9,8 +9,8 @@ Welcome!
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kjsang&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 
-### 현재 작업중인 논문 code 저장소
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=discourse_rf)](https://github.com/anuraghazra/github-readme-stats)
+### 규제정책변동과 플랫폼 기업의 규제대응전략: 쿠팡(Coupang) 사례를 중심으로
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=analysis.coupang)](https://github.com/kjsang/analysis.coupang)
 
 
 <!--
