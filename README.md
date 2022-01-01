@@ -9,7 +9,7 @@ Welcome!
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kjsang&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 
-### 규제정책변동과 플랫폼 기업의 규제대응전략: 쿠팡(Coupang) 사례를 중심으로
+### 플랫폼 기업의 구조적 권력과 규제정정책변동: 쿠팡(Coupang) 사례를 중심으로
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=analysis.coupang)](https://github.com/kjsang/analysis.coupang)
 
 
