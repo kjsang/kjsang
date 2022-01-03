@@ -1,6 +1,6 @@
 ### Hi there 👋 
 ### This is Jusangs' github🦊
-Welcome!  
+Welcome! I am a researcher for public policy. I have a broad Interest in research using text mining and network analysis.  
 안녕하세요. 빅데이터를 기반으로 정책을 연구합니다. 의제설정론과 정책결정과정에 관심이 있습니다. 주요 활용 방법론은 R을 활용한 머신러닝과 텍스트 마이닝, 네트워크 분석 등입니다. 현재 리서치 회사 여론조사부에서 근무하고 있습니다.
 
 ### Jusangs' GitHub stats
