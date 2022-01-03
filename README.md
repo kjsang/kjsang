@@ -10,10 +10,10 @@ Welcome!
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kjsang&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 
-### 플랫폼 기업의 구조적 권력과 규제정정책변동: 쿠팡(Coupang) 사례를 중심으로
+### Kim, J., Haneul, K., Gayoung, S., Oh，Taeseong, & Arum, P. (2021). Structural power of platform business and regulatory policy changes: Focusing on ‘Coupang’. Journal of Regulation Studies, 30(2), 221–262. https://doi.org/10.22954/ksrs.2021.30.2.008  
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=analysis.coupang)](https://github.com/kjsang/analysis.coupang)
   
-### 공직자의 이해충돌 방지법 정책결정과정 분석: 텍스트 마이닝을 활용한 다중흐름모형의 적용  
+### Kim, J. (2022). A Study of the policy-making process of the Public Servant Conflict-of-Interest Prevention Act: The Application of the Multiple Streams Framework Using Text Mining. 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=conflict.of.interest)](https://github.com/kjsang/conflict.of.interest)
   
 <!--
