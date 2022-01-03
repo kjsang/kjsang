@@ -13,7 +13,7 @@ Welcome!
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=analysis.coupang)](https://github.com/kjsang/analysis.coupang)
   
 ### 공직자의 이해충돌 방지법 정책결정과정 분석: 텍스트 마이닝을 활용한 다중흐름모형의 적용  
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=conflict.of.interest)](https://github.com/kjsang/conflict.of.interest)
+
   
 <!--
 **kjsang/kjsang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
