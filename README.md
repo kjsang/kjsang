@@ -13,7 +13,7 @@ Welcome! I am a researcher for public policy. I have a broad Interest in researc
 ### Kim, J., Haneul, K., Gayoung, S., Oh，Taeseong, & Arum, P. (2021). Structural power of platform business and regulatory policy changes: Focusing on ‘Coupang’. Journal of Regulation Studies, 30(2), 221–262. https://doi.org/10.22954/ksrs.2021.30.2.008  
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=analysis.coupang)](https://github.com/kjsang/analysis.coupang)
   
-### Kim, J. (2022). A Study of the policy-making process of the Public Servant Conflict-of-Interest Prevention Act: The Application of the Multiple Streams Framework Using Text Mining. 
+### Kim, J. (2022). A Study of the policy-making process of the Public Servant Conflict-of-Interest Prevention Act: The Application of the Multiple Streams Framework Using Text Mining. http://www.dcollection.net/handler/hufs/200000596641    
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=conflict.of.interest)](https://github.com/kjsang/conflict.of.interest)
   
 <!--
