@@ -16,7 +16,7 @@ Welcome! I am a researcher for public policy. I have a broad Interest in researc
 ### 김주상. (2022). 공직자의 이해충돌방지법 정책결정과정 분석. 한국외국어대학교 석사학위논문. http://www.dcollection.net/handler/hufs/200000596641    
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=conflict.of.interest)](https://github.com/kjsang/conflict.of.interest)
   
-### 김성수, 이창율, 김주상. (2022). 정책의 연속과 변동: 전국민 재난지원금 아이디어와 채택요인 분석. 한국공공관리학보. 36(1)   
+### 김성수, 이창율, 김주상. (2022). 정책의 연속과 변동: 전국민 재난지원금 아이디어와 채택요인 분석. 한국공공관리학보. 36(1), 1-31. https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002831212   
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=discourse.rf)](https://github.com/kjsang/discourse.rf)
 
 <!--
