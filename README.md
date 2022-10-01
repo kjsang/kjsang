@@ -9,7 +9,7 @@ Welcome! I am a researcher for public policy. I have a broad Interest in researc
 ### 많이 사용한 언어
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kjsang&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
-
+### 논문목록
 김주상, 장현주 (2022). 공직자의 이해충돌방지를 위한 정책결정과정 분석: 텍스트마이닝을 활용한 다중흐름모형의 적용. 한국행정학보, 56(3), 35-66.
 https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002878165
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kjsang&repo=KPAR.conflict.of.interest)](https://github.com/kjsang/KPAR.conflict.of.interest)
